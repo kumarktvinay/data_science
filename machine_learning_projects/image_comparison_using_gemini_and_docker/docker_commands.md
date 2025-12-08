@@ -2,7 +2,8 @@ once the dockerfile is setup, run the following command to create an image
 
 ## Build Image
 docker build -t my-flask-app:latest .
-  •	docker build – Build an image
+
+	•	docker build – Build an image
 	•	-t my-flask-app:latest – Tag/name the image (name:tag)
 	•	. – Build context (current folder; all files here can be copied into image)
 
@@ -13,7 +14,8 @@ docker images
 
 ## Run Image
 docker run --name my-flask-container -p 5000:5000 my-flask-app:latest
-  •	docker run – Start a container from an image
+  
+  	•	docker run – Start a container from an image
 	•	--name my-flask-container – Optional, gives the container a friendly name
 	•	-p 5000:5000 – Map host port 5000 → container port 5000
 	•	Format: HOST_PORT:CONTAINER_PORT
